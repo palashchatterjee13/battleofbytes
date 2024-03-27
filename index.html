@@ -4,69 +4,191 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Battle of Bytes</title>
-  <meta content="battle of bytes website" name="description">
-  <meta content="battle of bytes website palash chatterjee plain web" name="keywords">
-  <meta content="Palash Chatterjee" name="author">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+
+  <title>Battle Of Bytes Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <video autoplay loop muted class="bg-video">
-    <source src="assets/img/bg.mp4" type="video/mp4">
-  </video>
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#resume">Events</a></li>
-        <li><a class="nav-link scrollto" href="#services">Prizes</a></li>
-        <li><a class="nav-link scrollto" href="#testimonials">Teams</a></li>
-        <li><a class="nav-link scrollto" href="#Rules">Rules</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
-  </header>
-  <section id="hero">
-    <div class="hero-container">
-      <h1>Battle of Bytes</h1>
-      <h2>Byte Brawl: Code your way to Victory</h2>
-      <a href="#resume" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+
+  <div class="pop-up" id="pop-up">
+    <a href="https://techverse.ltd/" target="_blank" style="color: inherit;"></a>
+    <img src="https://techverse.ltd/assets/img/icon/icon.svg" width="50px" style="margin-right: 10px;" />
+    <div class="text">
+      This is a techverse sponsored event.
     </div>
-  </section>
+    </a>
+    <button class="btn btn-primary-outline" style="margin-left: 10px;"
+      onclick="document.getElementById('pop-up').remove()"><i class="bi bi-x-circle"></i></button>
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Battle Of Bytes</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#services">Events</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Teams</a></li>
+          <li><a class="nav-link scrollto" href="#team">Prizes</a></li>
+          <li><a class="nav-link scrollto" href="#about">Rules</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Battle of Bytes: Where Innovation Meets Competition!</h1>
+          <h2>Unleash Your Byte Power: A thrilling clash of minds, where coding prowess meets strategic brilliance
+            in
+            the
+            ultimate quest for digital supremacy.</h2>
+          <!-- <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
+                class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div> -->
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
   <main id="main">
-    <section id="resume" class="resume">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
       <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-code"></i></div>
+              <h4 class="title"><a href="">Skill Enhancement</a></h4>
+              <p class="description">
+                Engage in diverse coding challenges spanning various languages and domains, honing
+                your programming prowess and problem-solving abilities.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-people"></i></div>
+              <h4 class="title"><a href="">Networking Opportunities</a></h4>
+              <p class="description">
+                Interact with peers, mentors, and industry professionals, fostering valuable
+                connections and potential career opportunities in the tech world.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-gift"></i></div>
+              <h4 class="title"><a href="">Prizes and Recognition</a></h4>
+              <p class="description">
+                Compete for coveted prizes, certificates, and the chance to be recognized as a
+                top coder, showcasing your talent and dedication on a prestigious platform.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+        <br />
+        <br />
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="132" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Participants</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Teams</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Days</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Winners</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
         <div class="section-title">
           <span>Events</span>
           <h2>Events</h2>
-          <p>Fasten your seat belts for the most exiciting event of the year!!</p>
+          <p>
+            Dive into a spectrum of thrilling challenges at the Battle of Bytes! From the adrenaline-pumping Buzzer
+            Blitz to the mind-bending Code Mystery, and the exhilarating Algorithm Odyssey, each event promises to
+            test
+            your coding prowess and strategic acumen like never before. Get ready to conquer the digital arena and
+            unleash your byte power!
+          </p>
         </div>
+
         <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Pre Event</h3>
-            <div class="resume-item pb-0">
-              <h4>Auction Palooza</h4>
-              <h5>March 28, 2024</h5>
-              <p><em>Event where the faculty members will go against each other to get the best coders in there teams.
-                  The team with the highest bid will get the coder. Do join us to see which of your faculty gets the
-                  best team.</em></p>
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-currency-rupee"></i></div>
+              <h4><a href="">Pre Event Auction Palooza</a></h4>
               <p>
               <ul>
                 <li>Venue: Seminar Hall </li>
@@ -75,34 +197,11 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">The Main Events</h3>
-            <div class="resume-item">
-              <h4>Buzzer Blitz and Code Mystery</h4>
-              <h5>April 9, 2024</h5>
-              <p><em></em></p>
-              <p>
-              <ul>
-                <li>Venue: CL-1 and CL-3 </li>
-                <li>Time: 3:30 onwards </li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Data Dynasty, DSAthon, Algorithm Dynasty and Code Mania </h4>
-              <h5>April 10, 2024</h5>
-              <p><em></em></p>
-              <p>
-              <ul>
-                <li>Venue: CL-1 and CL-3 </li>
-                <li>Time: 3:30 onwards </li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Code Combat and PyChampion</h4>
-              <h5>April 12, 2024</h5>
-              <p><em></em></p>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-question-circle"></i></div>
+              <h4><a href="">Buzzer Blitz and Code Mystery</a></h4>
               <p>
               <ul>
                 <li>Venue: CL-1 and CL-3 </li>
@@ -111,305 +210,425 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="testimonials" class="testimonials">
-      <div class="section-title">
-        <span>Teams</span>
-        <h2>Teams</h2>
-        <p>Meet the team mentors and their teams</p>
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Data Dynasty, DSAthon, Algorithm Dynasty and Code Mania </a></h4>
+              <p>
+              <ul>
+                <li>Venue: CL-1 and CL-3 </li>
+                <li>Time: 3:30 onwards </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Code Combat and PyChampion</a></h4>
+              <p>
+              <ul>
+                <li>Venue: CL-1 and CL-3 </li>
+                <li>Time: 3:30 onwards </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-      <div class="container position-relative">
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Teams</span>
+          <h2>Teams</h2>
+          <p>
+            Get ready to meet the formidable contenders of the Battle of Bytes! From seasoned coding veterans to
+            fresh-faced innovators, each team brings its unique blend of skill, creativity, and determination to the
+            digital arena. Without further ado, let's welcome the teams ready to code their way to glory!
+          </p>
+        </div>
+
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. Gurminder Singh</h3>
-                <h4>Decoding Victory</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Where every line counts!!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. Gurminder Singh</h3>
+                <h4>Decoding Victory</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. PK Sharma</h3>
-                <h4>JavaScript Titans</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   DOMinating the world!!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. PK Sharma</h3>
+                <h4>JavaScript Titans</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. Subhash Chand Gupta</h3>
-                <h4>Python Pacers</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Making Code Magic Happen
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. Subhash Chand Gupta</h3>
+                <h4>Python Pacers</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Dr. Vishwambhar Pathak</h3>
-                <h4>Data Drivers</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   From Bugs to Brilliance
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Dr. Vishwambhar Pathak</h3>
+                <h4>Data Drivers</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. Santosh Kumar Agarwal</h3>
-                <h4>Java Jaguars</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Code Warriors of the Byte World
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. Santosh Kumar Agarwal</h3>
+                <h4>Java Jaguars</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. Santosh Sharma</h3>
-                <h4>Ruby Royals</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Gems of Code, Gems of Victory
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Dr. Vivek Gaur</h3>
-                <h4>Syntax Soldiers</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Casting Spells of Efficiency in Every Code
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Dr. Vivek Gaur</h3>
+                <h4>Syntax Soldiers</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. B Pathak</h3>
-                <h4>Byte Blasters</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Igniting Code, Sparking Victory
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. B Pathak</h3>
+                <h4>Byte Blasters</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Mr. Puneet Sharma</h3>
-                <h4>Logic Legends</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Masterminds of the Code
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Mr. Puneet Sharma</h3>
+                <h4>Logic Legends</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Dr. Seema Gaur</h3>
-                <h4>Code Ninjas</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Silent Strikers, Flawless Code
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Dr. Seema Gaur</h3>
+                <h4>Code Ninjas</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Dr. Anju Sharma</h3>
-                <h4>Data Daredevils</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Fearless in the Face of Complex Data
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Dr. Anju Sharma</h3>
+                <h4>Data Daredevils</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/logo.png" class="testimonial-img" alt="">
-                <h3>Dr. Archana Sharma</h3>
-                <h4>Tech Toppers</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Braving the Frontlines of Technology
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <img src="assets/img/testimonials/code.png" class="testimonial-img" alt="">
+                <h3>Dr. Archana Sharma</h3>
+                <h4>Tech Toppers</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
 
-    <section id="services" class="services">
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
       <div class="container">
+
         <div class="section-title">
           <span>Prizes</span>
           <h2>Prizes</h2>
-          <p>The amazing awards for the winners</p>
+          <p>
+            Epic rewards await the champions of the Battle of Bytes! From prestigious certificates to coveted
+            trophies,
+            and exciting prizes, victory in this electrifying competition guarantees recognition and celebration of
+            your
+            coding prowess and strategic brilliance.
+          </p>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"
-                style="background: white; background-image: url(assets/img/headphones.png); background-size: cover;">
-                <!-- <i class="bx bxl-dribbble"></i> -->
-              </div>
-              <h4 class="title"><a href="">1st</a></h4>
-              <p class="description">RGB Headphones</p>
-              <p>Will be given to all the winning team participants</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"
-                style="background: white; background-image: url(assets/img/keyboard.png); background-size: cover;">
-                <!-- <i class="bx bx-file"></i> -->
-              </div>
-              <h4 class="title"><a href="">2nd</a></h4>
-              <p class="description">RGB Keyboard</p>
-              <p>Will be given to all the winning team participants</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"
-                style="background: white; background-image: url(assets/img/mouse.png); background-size: cover;">
-                <!-- <i class="bx bx-tachometer"></i> -->
-              </div>
-              <h4 class="title"><a href="">3rd</a></h4>
-              <p class="description">RGB Mouse</p>
-              <p>Will be given to all the winning team participants</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="Rules" class="Rules">
-      <div class="container">
-        <div class="section-title">
-          <span>Rules</span>
-          <h2>Rules</h2>
-          <p>There are certain rules that have to be followed by both the faculty members and the students</p>
-        </div>
         <div class="row">
-          <div class="col-lg-6 col-md-6 handbook">
-            <div class="box">
-              <h3>Faculty Handbook</h3>
-              <p>All the faculty members are requested to go through the following document, to get the idea for the
-                event.</p>
-              <div class="btn-wrap">
-                <a href="https://drive.google.com/file/d/1682u4KmNAl5x1HMYsMwcqOLw-lrQmbIj/view" class="btn-buy">Faculty
-                  Handbook
-                </a>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/headphones.png" alt="">
+              <h4>1st - RGB Headphones</h4>
+              <p>
+                The first prize of the Battle of Bytes will be awarded to the winning team, who will receive a
+                magnificent trophy along with certificates and exciting prizes.
+              </p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 mt-4 mt-md-0 handbook">
-            <div class="box featured">
-              <h3>Student Handbook</h3>
-              <p>All the students are requested to go through the following document, to get an idea about the event.
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/keyboard.png" alt="">
+              <h4>2nd - RGB Keyboard</h4>
+              <p>
+                The second prize in the Battle of Bytes competition will be awarded to the runner-up team,
+                recognizing
+                their impressive coding abilities and teamwork.
               </p>
-              <div class="btn-wrap">
-                <a href="https://drive.google.com/file/d/1g-1qjAqRUTBhrlAowEfgDecfyUBrkx3N/view" class="btn-buy">Student
-                  Handbook
-                </a>
-              </div>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/mouse.png" alt="">
+              <h4>3rd - RGB Mouse</h4>
+              <p>
+                The third prize in the Battle of Bytes competition will be awarded to the team that secures third
+                place,
+                acknowledging their commendable coding skills and collaborative effort.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Introducing our Faculty Handbook for mentors and Student Handbook for
+              participants. Let the coding battle begin!</h3>
+            <p class="fst-italic">
+              Embark on the Battle of Bytes journey with our essential guides: the Faculty Handbook empowers
+              mentors,
+              while the Student Handbook equips participants. Dive into coding challenges, ignite innovation, and
+              unleash your potential in this thrilling competition where every byte counts!
+            </p>
+            <ul>
+              <a target="_blank" href="https://drive.google.com/file/d/1682u4KmNAl5x1HMYsMwcqOLw-lrQmbIj/view">
+                <li><i class="bi bi-download"></i> Download Faculty Handbook</li>
+              </a>
+              <a target="_blank" href="https://drive.google.com/file/d/1g-1qjAqRUTBhrlAowEfgDecfyUBrkx3N/view">
+                <li><i class="bi bi-download"></i> Download Student Handbook</li>
+              </a>
+            </ul>
           </div>
         </div>
+
       </div>
-    </section>
+    </section><!-- End About Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Organizing Team</span>
+          <h2>Organizing Team</h2>
+          <p>
+            The dedicated organizing team behind Battle of Bytes comprises passionate individuals driven by a shared
+            commitment to fostering innovation and excellence in coding. With meticulous planning and unwavering
+            enthusiasm, they ensure a seamless and unforgettable experience for all participants, mentors, and
+            attendees.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/palash.png" alt="">
+              <h4>Palash Chatterjee</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/rajveer.jpg" alt="">
+              <h4>Rajveer Mewara</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/hardik.jpg" alt="">
+              <h4>Hardik Malik</h4>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/abhinav.png" alt="">
+              <h4>Abhinav tadi</h4>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/anushree.jpg" alt="">
+              <h4>Anushree Agarwal</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/sanchi.jpg" alt="">
+              <h4>Sanchi Malhotra</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
+
         <div class="section-title">
           <span>Contact</span>
           <h2>Contact</h2>
-          <p>For any query, please contact the undersigned</p>
+          <p>Got Questions? Let's Connect!</p>
         </div>
+
         <div class="row">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-share-alt"></i>
-                  <h3>Social Profiles</h3>
-                  <div class="social-links">
-                    <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-                    <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
-                    <a href="https://www.instagram.com/battle_of_bytes?igsh=MTU2ZDdlZWV2dzZ2YQ==" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-                    <!--<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-                  </div>
-                </div>
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>27, Central Road Apex Circle, 27, Central Road, Malviya Nagar Industrial Area, Malviya
+                  Nagar, Jaipur, Rajasthan 302017</p>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Me</h3>
-                  <p>hardikmalikc9010@gmail.com</p>
-                  <p>r.mewara3@gmail.com</p>
-                </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>
+                  hardikmalikc9010@gmail.com
+                  <br />
+                  r.mewara3@gmail.com
+                </p>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Me</h3>
-                  <p>+91 9950996447</p>
-                  <p>+91 7339790401</p>
-                </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9950996447
+                  <br />
+                  +91 7339790401
+                </p>
               </div>
+
+              <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
             </div>
+
           </div>
-          <div class="col-lg-6">
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -419,37 +638,65 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
+
         </div>
+
       </div>
-    </section>
-  </main>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <h3>Battle of Bytes</h3>
-      <p>Byte Brawl: Code your way to Victory</p>
-      <div class="social-links">
-        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        <a href="https://www.instagram.com/battle_of_bytes?igsh=MTU2ZDdlZWV2dzZ2YQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Battle Of Bytes</h3>
+            <p>
+              Unleash Your Byte Power: A thrilling clash of minds, where coding prowess meets strategic brilliance
+              in
+              the ultimate quest for digital supremacy.
+            </p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/battle_of_bytes?utm_source=qr&igsh=aXd3a3BmeHVvNWl4" target="_blank"
+            class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+
       </div>
     </div>
-    <p>Designed and developed by <a href="https://www.linkedin.com/in/palash-chatterjee-3730a9261/"
-        style="color: inherit;">Palash
-        Chatterjee</a>, Hardik Malik and Rajveer Mewara and Team</p>
-    <p>Battle of Bytes organizing team, Birla Institue of Technology, Mesra - Jaipur Campus</p>
-  </footer>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TechVerse</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/palash-chatterjee-3730a9261/" target="_blank">Palash
+          Chatterjee</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
