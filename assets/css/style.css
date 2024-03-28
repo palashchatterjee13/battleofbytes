@@ -1,11 +1,3 @@
-/**
-* Template Name: eNno
-* Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -30,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1384,4 +1376,13 @@ ul {
   align-items: center;
   justify-content: flex-start;
   z-index: 99999;
+}
+
+.bit-logo {
+  border: 0;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
