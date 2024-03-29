@@ -254,3 +254,44 @@
   new PureCounter();
 
 })()
+
+$(function(){
+  $.ajax({
+    url: "https://techverse-server.000webhostapp.com/request/leaderboard.php",
+    cache: false,
+    success: function(response){
+      // console.log(response)
+      let rows = JSON.parse(response)
+      let allZero = true;
+      for(let row of rows) {
+        if (row[0] == "Index") continue;
+        if (parseInt(row[2]) != 0) {
+          allZero = false;
+        }
+        // console.log(parseInt(row[2]), parseInt(row[2]) != 0)
+      }
+      if(!allZero) {
+        for(let i = 1; i< rows.length; i++) {
+          for(let j = 1; j< rows.length - 1; j++) {
+            if (parseInt(rows[j][2]) > parseInt(rows[j -1][2])) {
+              let t = rows[j];
+              rows[j] = rows[j -1];
+              rows[j -1] = t;
+            }
+          }
+        }
+        // console.log(rows)
+        $(".leaderboard").html("<table class='lbTable' cellpadding='10px'></table>")
+        var c = 1;
+        for(let row of rows) {
+          if (row[0] == "Index") {
+            $(".lbTable").append(`<tr> <th>Rank</th> <th>Name</th> <th>Score</th> </tr>`)
+            continue;
+          };
+          $(".lbTable").append(`<tr> <td>#${c}  </td> <td>${row[1]} ${(c<=3)? `<i class="bi bi-fire" style="color: orange;"></i>` : ""}</td> <td>${row[2]}</td> </tr>`);
+          c++;
+        }
+      }
+    }
+  });
+})
