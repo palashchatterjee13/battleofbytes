@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estimate.bin [HTML variant]</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .console {
+            font-family: monospace;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: -15px;
+            left: 0;
+        }
+
+        .console header {
+            background-color: #555;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #DDD;
+        }
+
+        .console .consolebody {
+            box-sizing: border-box;
+            padding: 20px;
+            overflow: hidden;
+            height: 100%;
+            background-color: #000;
+            color: transparent;
+        }
+
+        .console .consolebody p {
+            line-height: 1.5rem;
+        }
+    </style>
+    <script>
+        var baseExpanse = 0;
+        var subdomainExpanse = 567.834;
+        var vmExpanse = 1232.973;
+        var baseExpanse = subdomainExpanse + vmExpanse;
+
+        $(function () {
+            $.ajax({
+                url: "https://techverse-server.000webhostapp.com/request/estimate.php",
+                cache: false,
+                success: function (response) {
+                    setTimeout(() => {
+                        document.getElementById("consolebody").style.color = "#63de00";
+                        document.getElementById("amount").innerHTML = "VM data calculated the burn as " + (baseExpanse + (parseInt(response) * 0.5523)).toLocaleString('en-IN', {
+                            maximumFractionDigits: 5,
+                            style: 'currency',
+                            currency: 'INR'
+                        });
+                    }, 3000)
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="console">
+        <header>
+            <p>remote-guest@techverse.ltd</p>
+        </header>
+        <div class="consolebody" id="consolebody">
+            <p>$ remote-session-bash -u="remote-guest" -run="estimate.sh" -output="text/html" -output-type="html/shell"
+                -allow-input="false" -session="false" </p>
+            <p>&gt; Building text/html for "estimate.sh" </p>
+            <p>collect estimate.sh </p>
+            <p>run estimate.sh </p>
+            <p>success build dynamic html with fields</p>
+            <p>- [float] amount </p>
+            <p>run routine-1</p>
+            <p id="amount"></p>
+        </div>
+    </div>
+</body>
+
+</html>
