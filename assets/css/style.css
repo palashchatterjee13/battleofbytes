@@ -846,6 +846,7 @@ section {
   position: relative;
   z-index: 2;
   border: 6px solid #fff;
+  aspect-ratio: 1;
 }
 
 .testimonials .testimonial-item h3 {
