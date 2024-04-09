@@ -272,7 +272,7 @@ $(function(){
       }
       if(!allZero) {
         for(let i = 1; i< rows.length; i++) {
-          for(let j = 1; j< rows.length - 1; j++) {
+          for(let j = 1; j< rows.length ; j++) {
             if (parseInt(rows[j][2]) > parseInt(rows[j -1][2])) {
               let t = rows[j];
               rows[j] = rows[j -1];
